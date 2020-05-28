@@ -16,7 +16,6 @@ var total_cases = []
 async function getTimelineHistory(){
 	var fetch_data = await fetch(timeLineAPI)
 	var timeline_data = await fetch_data.json()
-	console.log(timeline_data)
 	timeline_data.forEach(timeline => {
 		total_cases.push(timeline.totalCases)
 		ch_recovered.push(timeline.totalRecoveries)
@@ -82,6 +81,7 @@ function makechart(){
 function show(){
 	
 	document.getElementsByClassName('list-container')[0].style.display = 'none'
+	document.getElementById('footor').style.display = 'none'
 	document.getElementsByClassName('loading')[0].style.display = 'flex'
 }
 
@@ -89,6 +89,8 @@ function displayever(){
 	
 	document.getElementsByClassName('list-container')[0].style.display = 'block'
 	document.getElementsByClassName('loading')[0].style.display = 'none'
+	document.getElementById('footor').style.display = 'block'
+
 }
 
 show()
