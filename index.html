@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title></title>
+</head>
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <div class="loading">
+        <div class="round-circle">
+        </div>
+        <h2>Loading....</h2>
+    </div>
+    <div class="list-container">
+        <div class="rows">
+            <div class="row1">
+                <div class="titles">
+                    <h2 class="title" style="color: #ffe601;">Total Cases</h2>
+                    <p class="value" id='positive'>0</p>
+                    <h2 class="title" style="color: #ffe601;">New Cases</h2>
+
+                    <p class="value" id='positivenew'>0</p>
+
+                </div>
+                <div class="titles">
+                    <h2 class="title" style="color: #b53114;">Total Deaths</h2>
+                    <p class="value" id='dead'>0</p>
+                    <h2 class="title" style="color: #b53114;">New Deaths</h2>
+
+                    <p class="value" id='deadnew'>0</p>
+
+                </div>
+                <div class="titles">
+                    <h2 class="title" style="color: #66b032;">Total Recovories</h2>
+                    <p class="value" id='recovered'>0</p>
+                    <h2 class="title" style="color: #66b032;">New Recovories</h2>
+
+                    <p class="value" id='recoverednew'>0</p>
+
+                </div>
+            </div>
+        </div>
+        <canvas id="covid-chart" height="800px" width="100px"></canvas>
+    </div>
+    <footer>
+        <h1>&copy; Developed By Gaurav Jha</h1>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
