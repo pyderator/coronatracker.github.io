@@ -44,7 +44,10 @@ function makechart(){
 				backgroundColor:'yellow',
 				borderColor:'yellow',
 				data: total_cases.slice(63),
-				borderWidth: 1
+				borderWidth: 2,
+				pointBorderWidth:0.1,
+				pointStyle:'line'
+
 			},
 			{
 				label: 'Recovered',
@@ -52,7 +55,11 @@ function makechart(){
 				backgroundColor:'green',
 				borderColor:'green',
 				data: ch_recovered.slice(63),
-				borderWidth: 1
+				borderWidth: 2,
+				pointStyle:'line',
+				pointBorderWidth:0.1,
+
+
 			},
 			{
 				label: 'Dead',
@@ -60,7 +67,11 @@ function makechart(){
 				backgroundColor:'red',
 				borderColor:'red',
 				data: ch_dead.slice(63),
-				borderWidth: 1
+				borderWidth: 2,
+				pointStyle:'line',
+				pointBorderWidth:0.1,
+
+
 			}
 		]
 		},
